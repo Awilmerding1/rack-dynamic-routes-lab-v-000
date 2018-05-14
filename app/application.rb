@@ -6,12 +6,13 @@ class Application
 
   if req.path.match(/items/)
     item_name = req.path.split("/items/").last
+    
     resp.write item_name.price
   else
     resp.write "Route not found"
     resp.status = 404
   else
-    resp.status = 404
+    resp.status = 4040
   end
   resp.finish
 
