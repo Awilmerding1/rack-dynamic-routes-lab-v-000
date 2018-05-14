@@ -7,7 +7,9 @@ class Application
   if req.path.match(/items/)
     item_name = req.path.split("/items/").last
     resp.write item_name.price
-end
+  else
+    
+  end
 
 
 end
