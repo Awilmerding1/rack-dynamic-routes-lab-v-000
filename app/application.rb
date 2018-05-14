@@ -10,8 +10,8 @@ class Application
     if item != ""
       resp.write item.price
     else
-      resp.write "Route not found"
       resp.status = 404
+      resp.write "Route not found"
     end
   else
     resp.status = 400
