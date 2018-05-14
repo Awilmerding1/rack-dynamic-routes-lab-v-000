@@ -7,7 +7,7 @@ class Application
   if req.path.match(/items/)
     item_name = req.path.split("/items/").last
     item = Item.all.find{|i| i.name == item_name}
-    if item != ""
+    if Item.all.include?(item)
       resp.write item.price
     else
       resp.status = 404
