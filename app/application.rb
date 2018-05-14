@@ -1,6 +1,8 @@
 class Application
 
-  resp = Rack::
+  resp = Rack::Response.new
+req = Rack::Request.new(env)
+
 
 
 end
