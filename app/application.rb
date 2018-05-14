@@ -13,8 +13,8 @@ class Application
       resp.status = 404
     end
   else
-    resp.status = 4040
+    resp.status = 400
   end
   resp.finish
-
+end
 end
