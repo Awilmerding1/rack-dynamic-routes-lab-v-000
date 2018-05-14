@@ -8,7 +8,7 @@ class Application
     item_name = req.path.split("/items/").last
     # item = Item.all.find{|i| i.name == item_name}
       item = @@items.find{|i| i.name == item_name}
-    if Item.all.include?(item)
+    if @@items.include?(item)
       resp.write item.price
     else
       resp.status = 400
