@@ -5,7 +5,7 @@ class Application
   req = Rack::Request.new(env)
 
   if req.path.match(/items/)
-
+    req_item = 
 end
 
 
