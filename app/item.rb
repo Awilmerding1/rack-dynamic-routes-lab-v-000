@@ -1,15 +1,15 @@
 class Item
   attr_accessor :name, :price
 
-  @@all = []
+  # @@all = []
 
   def initialize(name,price)
     @name = name
     @price = price
-    @@all << self
+    # @@all << self
   end
 
-  def self.all
-    @@all
-  end
+  # def self.all
+  #   @@all
+  # end
 end
